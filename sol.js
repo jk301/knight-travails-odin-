@@ -1,6 +1,6 @@
 
 function knightMoves (start, end) {
-    console.log(`Start -> [${start}] & End -> [${end}]`)
+    console.log(`Start -> [ ${start} ] & End -> [ ${end} ]`)
     let visited = new Set()
     let parentMapper = {}
     let que = [[start, null]]
@@ -27,7 +27,7 @@ function knightMoves (start, end) {
             }
             path.reverse()
             console.log(`you made it in ${path.length - 1} moves! Heres your path: `)
-            console.log(path)
+            path.forEach (item => console.log(`[ ${item} ]`))
             return 
         }
         
